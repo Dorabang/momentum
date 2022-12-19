@@ -1,5 +1,6 @@
 # momentum
-momentum clone coding
+momentum clone coding url
+: http://semicolon000.dothome.co.kr/
 
 <!-- ./js/backgrond.js + ./js/quotes.js -->
 array에 저장되어 있는 배경과 명언을 랜덤하게 표시
