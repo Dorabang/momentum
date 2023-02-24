@@ -45,7 +45,14 @@ caption {
   display: none;
 }
 
-  }
+body {
+  font-family: "Noto Serif KR", serif;
+  font-size: 1.6rem;
+  color: #000;
+  line-height: 1.5;
+  text-align: center;
+  overflow: hidden;
+}
 `;
 
 export const Wrapper = styled.div`
@@ -67,4 +74,16 @@ export const Wrapper = styled.div`
     width: 100vw;
     height: 80vh;
   }
+`;
+
+export const ClockStyle = styled.h2`
+  font-size: 8rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 0 50px;
+`;
+
+export const Greeting = styled.h2`
+  text-align: center;
+  font-size: 3rem;
 `;
