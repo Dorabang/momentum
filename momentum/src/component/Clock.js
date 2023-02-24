@@ -11,7 +11,9 @@ const Clock = () => {
     setTime(`${hours}:${minutes}`);
   };
 
-  useEffect(() => setInterval(getTime, 1000), []);
+  useEffect(() => {
+    setInterval(getTime, 1000);
+  }, []);
 
   return (
     <>
