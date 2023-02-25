@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 html {
@@ -81,9 +81,45 @@ export const ClockStyle = styled.h2`
   font-weight: 700;
   text-align: center;
   padding: 20px 0 50px;
+
+  @media ${(props) => props.theme.tablet} {
+    padding: 0 0 30px;
+    font-size: 6rem;
+  }
 `;
 
 export const Greeting = styled.h2`
   text-align: center;
   font-size: 3rem;
+
+  @media ${(props) => props.theme.tablet} {
+    font-size: 2.4rem;
+  }
+`;
+
+export const QuotesStyle = styled.div`
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  transform: translateX(-50%);
+  width: 80%;
+
+  @media ${(props) => props.theme.mobile} {
+    bottom: -10px;
+    width: 90%;
+  }
+`;
+
+export const QuoteStyle = styled.p`
+  font-style: italic;
+  font-weight: 600;
+
+  @media ${(props) => props.theme.mobile} {
+    font-size: 1.4rem;
+  }
+`;
+
+export const AutherStyle = styled.p`
+  font-size: 1.4rem;
+  padding-top: 10px;
 `;
