@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import React, { useState } from "react";
 
 function Login() {
-  const [login, setLogin] = useState('');
+  const [login, setLogin] = useState("");
 
-  const USERNAME_KEY = 'username';
+  const USERNAME_KEY = "username";
 
   const onChangeInput = (event) => {
     const {
@@ -22,14 +22,14 @@ function Login() {
       <form onSubmit={onLoginSubmit}>
         <legend>Login Form</legend>
         <input
-          type='text'
+          type="text"
           required
-          maxLength='15'
-          placeholder='What is your name?'
+          maxLength="15"
+          placeholder="What is your name?"
           value={login}
           onChange={onChangeInput}
         />
-        <input type='submit' value='Log in' />
+        <input type="submit" value="Log in" />
       </form>
     </>
   );
